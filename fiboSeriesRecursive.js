@@ -13,5 +13,5 @@ function fibonacci(num){
         return fibo;
     }
 }
-let result = fibonacci(24);
+let result = fibonacci(14);
 console.log(result);
