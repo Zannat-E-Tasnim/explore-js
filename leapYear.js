@@ -1,12 +1,15 @@
 function leapYear(year){
-    if(year%4==0 && (year%400==0 || year%100!=0)){
-        console.log("Leap Year");
+    if(year%400==0 || (year%4==0 && year%100!=0)){
+        console.log(year, " Leap Year");
     }
     else{
-        console.log("Not Leap Year");
+        console.log(year, " Not Leap Year");
     }
     
 }
-leapYear(2087);
+leapYear(1700);
+leapYear(1800);
+leapYear(1900);
+leapYear(2000);
 
 
