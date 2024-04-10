@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exploring events</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas recusandae iste ex sint commodi error doloribus voluptatum excepturi vitae expedita illo odit nulla assumenda quae natus explicabo, beatae harum saepe ipsa nemo consectetur. Est labore asperiores praesentium dolore obcaecati voluptatum vero ducimus ipsa laudantium reprehenderit? Dolorem unde praesentium deserunt ipsa.</p>
+    <button onclick="alert(7)">Click me</button>
+    <button id="second">Click me - 1</button>
+    <button>Click me - 2</button>
+    <button>Click me - 3</button>
+
+    <script>
+        // function handleClick(){
+        //     document.body.style.backgroundColor = 'lightBlue';
+        // }
+        // var btn = document.getElementById('second');
+        // btn.onclick = function(){
+        //     console.log('Second Button');
+        // }
+        // btn.onclick = handleClick;
+        // btn.addEventListener('click', handleClick);
+
+        document.getElementById('second').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'tomato';
+        })
+    </script>
+</body>
+</html>
